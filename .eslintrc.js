@@ -27,6 +27,7 @@ module.exports = {
     'import/no-named-as-default': 'off',
     'import/no-unresolved': 'off',
     'import/namespace': 'off',
+    'import/export': 'off',
     'unicorn/prevent-abbreviations': 'off',
     'unicorn/prefer-module': 'off',
     'unicorn/import-style': 'off',
