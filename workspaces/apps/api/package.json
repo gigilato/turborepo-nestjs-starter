@@ -18,6 +18,7 @@
     "clean": "rm -rf dist && rm tsconfig.build.tsbuildinfo"
   },
   "dependencies": {
+    "@groomie/nest-config": "workspace:*",
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
     "@nestjs/platform-express": "^8.0.0",

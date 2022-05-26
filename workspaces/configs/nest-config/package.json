@@ -1,0 +1,26 @@
+{
+  "name": "@groomie/nest-config",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "scripts": {
+    "postinstall": "yarn run build",
+    "prebuild": "rimraf dist",
+    "build": "tsc -p tsconfig.build.json",
+    "build:watch": "tsc -p tsconfig.build.json -w --preserveWatchOutput",
+    "start:dev": "yarn run build:watch"
+  },
+  "dependencies": {
+    "@nestjs/config": "^2.0.1",
+    "dotenv": "^16.0.1",
+    "joi": "^17.6.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.2"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^8.0.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.2.0"
+  }
+}

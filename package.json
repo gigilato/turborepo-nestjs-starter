@@ -3,7 +3,8 @@
   "packageManager": "yarn@3.2.1",
   "workspaces": [
     "workspaces/apps/*",
-    "workspaces/libs/*"
+    "workspaces/libs/*",
+    "workspaces/configs/*"
   ],
   "version": "1.0.0",
   "main": "index.js",
