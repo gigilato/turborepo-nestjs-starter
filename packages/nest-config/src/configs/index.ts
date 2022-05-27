@@ -1,2 +1,2 @@
-export { apiConfig } from './config.api'
-export { mongoConfig } from './config.mongo'
+export { apiConfig as api } from './config.api'
+export { mongoConfig as mongo } from './config.mongo'

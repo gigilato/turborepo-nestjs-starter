@@ -8,8 +8,12 @@ import * as configs from './configs'
 export class ConfigModule {
   static forRoot(options: ConfigModuleOptions = {}): DynamicModule {
     return {
-      imports: [NestConfigModule.forRoot({ load: [configs.apiConfig] })],
-      module: NestConfigModule,
+      imports: [
+        NestConfigModule.forRoot({
+          load: options.load?.map((config) => configs[config]) ?? Object.values(configs),
+        }),
+      ],
+      module: ConfigModule,
       global: options.isGlobal,
       providers: [ConfigService],
       exports: [ConfigService],

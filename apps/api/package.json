@@ -15,10 +15,11 @@
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "clean": "rm -rf dist && rm tsconfig.build.tsbuildinfo"
+    "clean": "rm -rf dist ; rm tsconfig.build.tsbuildinfo ; rm -rf .turbo"
   },
   "dependencies": {
     "@groomie/nest-config": "workspace:*",
+    "@groomie/odm": "workspace:*",
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
     "@nestjs/platform-express": "^8.0.0",

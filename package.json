@@ -10,6 +10,7 @@
   "author": "Gigilato",
   "license": "MIT",
   "scripts": {
+    "postinstall": "yarn build",
     "build": "turbo run build",
     "format": "turbo run format",
     "start": "turbo run start",

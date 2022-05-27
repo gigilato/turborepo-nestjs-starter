@@ -8,5 +8,5 @@ export class ConfigModuleOptions {
   load?: Config[]
 }
 
-export type ApiConfig = ConfigType<typeof configs.apiConfig>
-export type MongoConfig = ConfigType<typeof configs.mongoConfig>
+export type ApiConfig = ConfigType<typeof configs.api>
+export type MongoConfig = ConfigType<typeof configs.mongo>

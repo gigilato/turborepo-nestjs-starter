@@ -1,5 +1,5 @@
 {
-  "name": "@groomie/nest-config",
+  "name": "@groomie/odm",
   "private": true,
   "main": "dist/index.js",
   "types": "dist/index.d.js",
@@ -11,15 +11,16 @@
     "clean": "rm -rf dist ; rm tsconfig.build.tsbuildinfo ; rm -rf .turbo"
   },
   "dependencies": {
-    "@nestjs/config": "^2.0.1",
-    "dotenv": "^16.0.1",
-    "joi": "^17.6.0"
+    "@groomie/nest-config": "workspace:*",
+    "@nestjs/mongoose": "^9.1.0",
+    "mongoose": "^6.3.4"
   },
   "devDependencies": {
     "typescript": "^4.7.2"
   },
   "peerDependencies": {
     "@nestjs/common": "^8.0.0",
+    "@nestjs/core": "^8.0.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.2.0"
   }
