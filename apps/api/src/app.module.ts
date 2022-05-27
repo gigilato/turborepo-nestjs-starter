@@ -4,7 +4,7 @@ import { AppController } from './app.controller'
 import { AppService } from './app.service'
 
 @Module({
-  imports: [ConfigModule.forRoot({ isGlobal: true })],
+  imports: [ConfigModule.forRoot({ isGlobal: true, load: ['apiConfig'] })],
   controllers: [AppController],
   providers: [AppService],
 })

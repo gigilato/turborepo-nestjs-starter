@@ -9,3 +9,4 @@ export class ConfigModuleOptions {
 }
 
 export type ApiConfig = ConfigType<typeof configs.apiConfig>
+export type MongoConfig = ConfigType<typeof configs.mongoConfig>
