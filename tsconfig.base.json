@@ -18,10 +18,8 @@
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": false
   },
-  "exclude": ["packages/**/tests/**", "packages/**/dist/**"],
   "references": [
-    { "path": "./workspaces/apps/*" },
-    { "path": "./workspaces/libs/*" },
-    { "path": "./workspaces/configs/*" }
+    { "path": "./apps/*" },
+    { "path": "./packages/*" },
   ]
 }

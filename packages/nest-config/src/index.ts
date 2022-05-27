@@ -1,6 +1,6 @@
 import dotenv from 'dotenv'
 
-dotenv.config({ path: '../../../.env' })
+dotenv.config({ path: '../../.env' })
 
 export * from './config.module'
 export * from './config.service'

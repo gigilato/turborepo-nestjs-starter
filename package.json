@@ -2,9 +2,8 @@
   "name": "groomie",
   "packageManager": "yarn@3.2.1",
   "workspaces": [
-    "workspaces/apps/*",
-    "workspaces/libs/*",
-    "workspaces/configs/*"
+    "apps/*",
+    "packages/*"
   ],
   "version": "1.0.0",
   "main": "index.js",

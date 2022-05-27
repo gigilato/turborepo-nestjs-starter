@@ -8,7 +8,8 @@
     "prebuild": "rimraf dist",
     "build": "tsc -p tsconfig.build.json",
     "build:watch": "tsc -p tsconfig.build.json -w --preserveWatchOutput",
-    "start:dev": "yarn run build:watch"
+    "start:dev": "yarn run build:watch",
+    "clean": "rm -rf dist && rm tsconfig.build.tsbuildinfo"
   },
   "dependencies": {
     "@nestjs/config": "^2.0.1",

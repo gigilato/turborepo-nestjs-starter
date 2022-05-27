@@ -477,9 +477,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@groomie/api@workspace:workspaces/apps/api":
+"@groomie/api@workspace:apps/api":
   version: 0.0.0-use.local
-  resolution: "@groomie/api@workspace:workspaces/apps/api"
+  resolution: "@groomie/api@workspace:apps/api"
   dependencies:
     "@groomie/nest-config": "workspace:*"
     "@nestjs/cli": ^8.0.0
@@ -507,9 +507,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@groomie/nest-config@workspace:*, @groomie/nest-config@workspace:workspaces/configs/nest-config":
+"@groomie/nest-config@workspace:*, @groomie/nest-config@workspace:packages/nest-config":
   version: 0.0.0-use.local
-  resolution: "@groomie/nest-config@workspace:workspaces/configs/nest-config"
+  resolution: "@groomie/nest-config@workspace:packages/nest-config"
   dependencies:
     "@nestjs/config": ^2.0.1
     dotenv: ^16.0.1
@@ -7962,8 +7962,8 @@ __metadata:
   linkType: hard
 
 "ws@npm:^7.4.6":
-  version: 7.5.7
-  resolution: "ws@npm:7.5.7"
+  version: 7.5.8
+  resolution: "ws@npm:7.5.8"
   peerDependencies:
     bufferutil: ^4.0.1
     utf-8-validate: ^5.0.2
@@ -7972,7 +7972,7 @@ __metadata:
       optional: true
     utf-8-validate:
       optional: true
-  checksum: 5c1f669a166fb57560b4e07f201375137fa31d9186afde78b1508926345ce546332f109081574ddc4e38cc474c5406b5fc71c18d71eb75f6e2d2245576976cba
+  checksum: 49479ccf3ddab6500c5906fbcc316e9c8cd44b0ffb3903a6c1caf9b38cb9e06691685722a4c642cfa7d4c6eb390424fc3142cd4f8b940cfc7a9ce9761b1cd65b
   languageName: node
   linkType: hard
 
