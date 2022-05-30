@@ -1,8 +1,9 @@
 import { ConfigModule, ConfigService, MongoConfig } from '@groomie/nest-config'
 import { DynamicModule, Module } from '@nestjs/common'
 import { MongooseModule } from '@nestjs/mongoose'
-import { OdmService } from './orm.service'
-import { OdmModuleOptions } from './orm.types'
+import { GroomerModule } from './modules/groomer'
+import { OdmService } from './odm.service'
+import { OdmModuleOptions } from './odm.types'
 
 @Module({})
 export class OdmModule {
@@ -17,6 +18,7 @@ export class OdmModule {
           },
           inject: [ConfigService],
         }),
+        GroomerModule,
       ],
       module: OdmModule,
       global: options.isGlobal,

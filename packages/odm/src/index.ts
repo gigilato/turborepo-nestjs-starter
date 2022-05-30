@@ -1,3 +1,3 @@
-export * from './orm.module'
-export * from './orm.service'
-export * from './orm.types'
+export * from './odm.module'
+export * from './odm.service'
+export * from './odm.types'
